@@ -1,8 +1,12 @@
 .main-container{
   margin: 0 auto;
   width: 320px;
+  @media (min-width: @tablet-width) {
+    min-width: 772px;
+  }
 }
 .main-title {
+  margin: 0;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
@@ -13,4 +17,12 @@
   text-align: center;
   color: #000000;
   mix-blend-mode: normal;
+  background-image: url("/img/hero-mobile.jpg");
+  height:283px;
+  @media (min-width: @tablet-width) {
+    background-image: url("img/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+  }
 }

@@ -1,4 +1,8 @@
 .contacts__wrapper{
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0;
+  }
 }
 .contacts__title{
   font-family: 'Open Sans';
@@ -49,4 +53,29 @@
 }
 .contacts__button{
   margin-left: 30px;
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+}
+.contacts__icon{
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+.contacts__header{
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+.contacts__info{
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+  }
 }

@@ -1,8 +1,14 @@
 .main-header{
-  margin: 0 auto;
+  height: 79px;
+  @media (min-width: @tablet-width){
+    display: flex;
+  }
 }
 .main-header__logo{
-
+  margin: 22px auto;
+  @media (min-width: @tablet-width){
+    margin: 0;
+  }
 }
 .image--mobile{
   display: block;

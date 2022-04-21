@@ -1,6 +1,10 @@
 .reviews__wrapper{
   width: 260px;
   padding: 0 30px 30px;
+  @media (min-width: @tablet-width){
+    width: 720px;
+    padding: 0;
+  }
 }
 .reviews__title{
   font-family: 'Open Sans';
@@ -11,17 +15,27 @@
   align-items: center;
   color: #000000;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    grid-area: 1;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 .reviews__text{
+  display: block;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  display: flex;
   align-items: center;
   color: #444444;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    grid-area: post-2;
+    font-size: 17px;
+  }
 }
 .reviews-item{
   padding: 0;
@@ -49,8 +63,16 @@
   color: #444444;
   mix-blend-mode: normal;
 }
+.reviews__author-info{
+  @media (min-width: @tablet-width){
+    grid-area: post-3;
+  }
+}
 .reviews__controls{
   border: 1px solid #ECECEC;
+  @media (min-width: @tablet-width){
+    grid-area: post-4;
+  }
 }
 .controls__button{
   background: #FFFFFF;
@@ -63,4 +85,19 @@
   padding: 13px 41px 13px 34px;
   border-left: 1px solid #ECECEC;
 }
-
+.reviews__content{
+  @media (min-width: @tablet-width){
+    display: grid;
+    grid-template-areas:"post-1  post-5"
+      "post-2 post-2 "
+      "post-3 post-4";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+}
+.reviews__button{
+  @media (min-width: @tablet-width){
+    grid-area: post-5;
+    
+  }
+}
