@@ -5,6 +5,10 @@
     width: 720px;
     padding: 0;
   }
+  @media (min-width: @desktop-width){
+    width: 1050px;
+    padding: 0 50px 0 50px;
+  }
 }
 .reviews__title{
   font-family: 'Open Sans';
@@ -94,10 +98,13 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 20px;
   }
+  @media (min-width: @desktop-width){
+    margin-bottom: 67px;
+  }
 }
 .reviews__button{
   @media (min-width: @tablet-width){
     grid-area: post-5;
-    
+
   }
 }

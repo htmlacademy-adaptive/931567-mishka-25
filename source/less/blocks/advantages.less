@@ -21,14 +21,13 @@
   color: #000000;
   mix-blend-mode: normal;
   @media (min-width: @tablet-width){
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
     font-size: 43px;
     line-height: 50px;
-    align-items: center;
-    color: #000000;
-    mix-blend-mode: normal;
+  }
+  @media (min-width: @desktop-width){
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 175px;
   }
 }
 .advantages__list{
@@ -43,6 +42,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
+  @media (min-width: @desktop-width){
+    margin-left: 175px;
+  }
 }
 .advantages__description{
   font-family: 'Open Sans';
@@ -50,8 +52,11 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  display: flex;
   align-items: center;
   color: #000000;
   mix-blend-mode: normal;
+  @media (min-width: @desktop-width){
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
