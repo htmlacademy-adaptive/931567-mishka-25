@@ -1,5 +1,4 @@
 .main-nav {
-  margin-top: 30px;
 }
 .main-nav__toggle{
 
@@ -9,6 +8,9 @@
     width: 768px;
     display: flex;
     flex-wrap: wrap;
+  }
+  @media (min-width: @desktop-width){
+    width: 1150px;
   }
 }
 .main-nav__list{
@@ -36,7 +38,7 @@
   @media (min-width: @tablet-width){
     padding: 0;
     border: none;
-    padding: 31px 31px ;
+    padding: 31px 31px;
   }
 }
 .user-list__link{
@@ -54,6 +56,7 @@
   @media (min-width: @tablet-width){
     padding: 0;
     border: none;
+    padding: 31px 31px ;
   }
 }
 .user-list__link-icon{
@@ -154,11 +157,21 @@
 }
 .site-list{
   @media (min-width: @tablet-width){
+    position: absolute;
+    top: 80px;
+    z-index: 1;
     order: 2;
+  }
+  @media (min-width: @desktop-width){
+    order: 0;
+    position: static;
   }
 }
 .user-list{
   @media (min-width: @tablet-width){
     margin-left: auto;
+  }
+  @media (min-width: @desktop-width){
+    order: 3;
   }
 }
