@@ -12,18 +12,35 @@
   margin: 22px auto;
   display: block;
   @media (min-width: @tablet-width){
+    padding: 22px 208px 18px 48px;
     margin: 0;
   }
   @media (min-width: @desktop-width){
     order: 1;
   }
 }
-.image--mobile{
-  display: block;
+.main-header__logo-icon--visible-phone {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
-.image--tablet{
+
+.main-header__logo-icon--visible-tablet {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
-.image--desktop{
+
+.main-header__logo-icon--visible-desktop {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
