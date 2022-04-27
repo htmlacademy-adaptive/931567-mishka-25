@@ -24,6 +24,8 @@
   color: #000000;
   mix-blend-mode: normal;
   @media (min-width: @tablet-width){
+    margin-top: 80px;
+    margin-left: 53px;
     grid-area: 1;
     font-weight: 700;
     font-size: 43px;
@@ -43,6 +45,8 @@
   color: #444444;
   mix-blend-mode: normal;
   @media (min-width: @tablet-width){
+    margin-top: 6px;
+    margin-left: 52px;
     grid-area: post-2;
     font-size: 17px;
   }
@@ -61,6 +65,9 @@
   align-items: center;
   color: #000000;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    font-size: 18px;
+  }
 }
 .reviews__author-contacts{
   margin-top: 3px;
@@ -77,14 +84,20 @@
 .reviews__author-info{
   margin-top: 35px;
   @media (min-width: @tablet-width){
+    margin-left: 52px;
     grid-area: post-3;
+    margin-top: 41px;
+    padding-bottom: 29px;
   }
 }
 .reviews__controls{
   margin-top: 30px;
   border: 1px solid #ECECEC;
   @media (min-width: @tablet-width){
+    margin-left: 206px;
+    border: none;
     grid-area: post-4;
+    margin-top: 58px;
   }
 }
 .controls__button{
@@ -93,16 +106,35 @@
 }
 .button--prev{
   padding: 13px 44px 6px 34px;
+  @media (min-width: @tablet-width){
+    padding: 0;
+    padding-right: 15px;
+  }
 }
 .button--next{
   padding: 11px 41px 8px 34px;
   border-left: 1px solid #ECECEC;
+  @media (min-width: @tablet-width){
+    padding: 0;
+    padding-left: 17px;
+    border: none;
+  }
 }
 .reviews__button{
   margin-top: 38px;
+  @media (min-width: @tablet-width){
+    margin-left: 186px;
+    width: 175px;
+    height: 52px;
+    margin-top: 75px;
+  }
 }
 .reviews__content{
   @media (min-width: @tablet-width){
+    background-image: url("/img/review.png");
+    background-repeat: no-repeat;
+    margin-top: 84px;
+    margin-bottom: 68px;
     display: grid;
     grid-template-areas:"post-1  post-5"
       "post-2 post-2 "

@@ -1,5 +1,8 @@
 .advantages{
   width: 320px;
+  @media (min-width: @tablet-width){
+    margin-top: 52px;
+  }
 }
 .advantages__wrapper{
   width: 260px;
@@ -37,11 +40,16 @@
   padding: 0;
   list-style-type: none;
   @media (min-width: @tablet-width){
+    position: relative;
     margin: 0 auto;
+    margin-top: 85px;
     min-width: 668px;
     display: grid;
+    grid-template-areas:"block-1  block-4"
+      "block-2  block-5"
+      "block-3 block-6 ";
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    row-gap: 100px;
   }
   @media (min-width: @desktop-width){
     margin-left: 175px;
@@ -59,6 +67,10 @@
   align-items: center;
   color: #000000;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    font-size: 20px;
+    line-height: 22px;
+  }
   @media (min-width: @desktop-width){
     font-size: 20px;
     line-height: 22px;
@@ -67,7 +79,79 @@
 .advantages__icon{
   margin: 0;
   padding: 0;
+  @media (min-width: @tablet-width){
+    position: absolute;
+  }
 }
 .advantages__item{
   margin-top: 36px;
+  @media (min-width: @tablet-width){
+    margin: 0;
+  }
+}
+.advantages__item--block1{
+  @media (min-width: @tablet-width){
+    grid-area: block-1;
+  }
+}
+.advantages__item--block2{
+  @media (min-width: @tablet-width){
+    grid-area: block-2;
+  }
+}
+.advantages__item--block3{
+  @media (min-width: @tablet-width){
+    grid-area: block-3;
+  }
+}
+.advantages__item--block4{
+  @media (min-width: @tablet-width){
+    grid-area: block-4;
+  }
+}
+.advantages__item--block5{
+  @media (min-width: @tablet-width){
+    grid-area: block-5;
+  }
+}
+.advantages__item--block6{
+  @media (min-width: @tablet-width){
+    grid-area: block-6;
+  }
+}
+.advantages__icon--icon1{
+  @media (min-width: @tablet-width){
+    top: -43px;
+    left: 10px;
+  }
+}
+.advantages__icon--icon2{
+  @media (min-width: @tablet-width){
+    top: 113px;
+    left: 3px;
+  }
+}
+.advantages__icon--icon3{
+  @media (min-width: @tablet-width){
+    bottom: 68px;
+    left: 10px;
+  }
+}
+.advantages__icon--icon4{
+  @media (min-width: @tablet-width){
+    top: -40px;
+    right: 294px;
+  }
+}
+.advantages__icon--icon5{
+  @media (min-width: @tablet-width){
+    bottom: 229px;
+    right: 283px;
+  }
+}
+.advantages__icon--icon6{
+  @media (min-width: @tablet-width){
+    bottom: 67px;
+    right: 296px;
+  }
 }
