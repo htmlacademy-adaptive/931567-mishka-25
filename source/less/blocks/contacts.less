@@ -24,6 +24,7 @@
     line-height: 50px;
   }
   @media (min-width: @desktop-width) {
+    margin-top: 59px;
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
@@ -37,6 +38,9 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     display: flex;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 1px 1px 1px 1px;
   }
 }
 .contacts__email-text{
@@ -84,6 +88,9 @@
     margin-top: 14px;
     margin-left: 52px;
   }
+  @media (min-width: @desktop-width) {
+    margin: 26px 0 0 0;
+  }
 }
 .contacts__adress-text{
   margin: 0;
@@ -122,6 +129,7 @@
     height: 52px;
   }
   @media (min-width: @desktop-width) {
+    margin: 93px 0 0 175px;
     grid-area: block-3;
   }
 }
@@ -130,6 +138,9 @@
   @media (min-width: @tablet-width) {
     display: block;
     margin-top: 14px;
+  }
+  @media (min-width: @desktop-width){
+    margin-right: 64px;
   }
 }
 .contacts__header{
@@ -142,9 +153,10 @@
     margin-top: 28px;
   }
   @media (min-width: @desktop-width) {
+    margin: 48px 0 0 63px;
     grid-area: block-1;
     width: 400px;
-    justify-content: center;
+    justify-content: flex-start;
     height: 81px;
   }
 }
@@ -158,9 +170,10 @@
     margin-bottom: 49px;
   }
   @media (min-width: @desktop-width) {
+    margin: 5px 0 0 173px;
     flex-direction: column;
     grid-area: block-2;
-    width: 290px;
+    width: 295px;
   }
 }
 .contacts__image{
@@ -170,8 +183,10 @@
 }
 .contacts__content{
   @media (min-width: @desktop-width) {
+    margin-top: 65px;
     display: grid;
     grid-template-columns: 527px 527px;
+    grid-template-rows: 152px 160px 152px;
     grid-template-areas:"block-1  block-4"
       "block-2 block-4"
       "block-3 block-4";
