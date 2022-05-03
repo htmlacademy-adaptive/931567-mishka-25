@@ -1,6 +1,7 @@
 .main-header{
   margin: 0 auto;
   @media (min-width: @tablet-width){
+    position: relative;
     display: flex;
   }
   @media (min-width: @desktop-width){
@@ -45,5 +46,11 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active{
+    opacity: 0.3;
   }
 }
