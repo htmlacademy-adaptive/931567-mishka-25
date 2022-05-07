@@ -1,0 +1,65 @@
+.form {
+  margin: 0 auto;
+  width: 320px;
+  @media (min-width: @tablet-width){
+    position: relative;
+    width: 768px;
+  }
+  @media (min-width: @desktop-width){
+    width: 1150px;
+  }
+}
+.form__title {
+  margin: 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  mix-blend-mode: normal;
+  background: #F1F1F1;
+  justify-content: center;
+  padding: 68px 0 73px 0;
+  @media (min-width: @tablet-width){
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 99px 0 77px 0;
+  }
+  @media (min-width: @desktop-width){
+    font-size: 53px;
+    line-height: 57px;
+    padding: 99px 0 97px 0;
+  }
+}
+.form__devider {
+  display: none;
+  @media (min-width: @tablet-width){
+    display: block;
+    position: absolute;
+    margin-top: -16px;
+  }
+}
+.form__description{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  /* or 185% */
+
+  display: flex;
+  align-items: center;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+}

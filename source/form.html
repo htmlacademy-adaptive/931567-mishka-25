@@ -69,100 +69,56 @@
       </div>
     </nav>
   </header>
-  <main class="catalog">
-    <div class="catalog__wrapper">
-      <h1 class="catalog__title">Каталог товаров</h1>
-      <svg class="catalog__devider" viewBox="0 0 1150 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <main class="form">
+    <div class="form__wrapper">
+      <h1 class="form__title">Вязание на заказ</h1>
+      <svg class="form__devider" viewBox="0 0 1150 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M1168.8 0C1153.15 0 1153.15 14 1137.61 14C1122.07 14 1121.96 0 1106.41 0C1090.87 0 1090.76 14 1075.22 14C1059.57 14 1059.57 0 1043.91 0C1028.26 0 1028.26 14 1012.72 14C997.065 14 997.065 0 981.522 0C965.87 0 965.87 14 950.326 14C934.783 14 934.348 0 918.804 0C903.152 0 903.152 14 887.609 14C872.065 14 871.848 0 856.304 0C840.652 0 840.652 14 825.109 14C809.456 14 809.456 0 793.804 0C778.152 0 778.152 14 762.609 14C746.956 14 746.957 0 731.413 0C715.87 0 715.652 14 700 14C684.348 14 684.348 0 668.804 0C653.152 0 653.152 14 637.609 14C621.956 14 621.956 0 606.304 0C590.652 0 590.652 14 575.109 14C559.456 14 559.457 0 543.913 0C528.261 0 528.261 14 512.717 14C497.065 14 497.065 0 481.522 0C465.87 0 465.87 14 450.217 14C434.565 14 434.565 0 418.913 0C403.261 0 403.261 14 387.609 14C371.957 14 371.957 0 356.304 0C340.652 0 340.652 14 325 14C309.348 14 309.348 0 293.696 0C278.043 0 278.043 14 262.391 14C246.739 14 246.739 0 231.087 0C215.435 0 215.435 14 199.891 14C184.239 14 184.239 0 168.587 0C152.935 0 152.935 14 137.283 14C121.63 14 121.63 0 105.978 0C90.3261 0 90.3261 14 74.6739 14C59.0217 14 59.0217 0 43.3696 0C28.1522 0 28.1522 14 12.5 14C-3.15217 14 -3.15218 0 -18.6957 0C-34.2391 0 -34.3478 14 -50 14V34H1200V14C1184.35 14 1184.35 0 1168.8 0Z"
           fill="white" />
       </svg>
-      <section class="product-cards">
-        <h2 class="visually-hidden">Карточки товаров</h2>
-        <ul class="product-cards__list">
-          <li class="product-cards__item">
-            <picture>
-              <source srcset="img/photo1-316x462.png" type="image/png" media="(min-width:1200px)">
-              <source srcset="img/photo1-334x334.png" type="image/png" media="(min-width:768px)">
-              <img class="product-cards__image" src="img/photo1.png" alt="Изображение зайца">
-            </picture>
-            <div class="product-cards__wrapper">
-              <div class="product-cards__description">
-                <p class="product-cards__title">Зайчик-попрыгайчик</p>
-                <p class="product-cards__params">Рост 30 см, вес 200 г</p>
-                <b class="product-cards__price">1 200 руб.
-                  <svg class="product-cards__icon" width="20" height="19" viewBox="0 0 20 19" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".2"
-                      d="M19.227 7.238h-3.382L12.56.402C12.367 0 11.98-.1 11.594.101c-.386.2-.483.603-.29 1.005L14.3 7.238H5.508l2.995-6.132c.194-.402 0-.804-.29-1.005-.386-.202-.772 0-.966.301L3.961 7.238H.773A.777.777 0 0 0 0 8.042c0 .402.29.805.773.805h.193l.87 3.015c-.193.101-.29.302-.29.604 0 .402.29.703.676.703L3.865 19h12.27l1.643-5.83c.386 0 .676-.302.676-.704 0-.201-.096-.503-.29-.604l.87-3.015h.193A.777.777 0 0 0 20 8.042a.777.777 0 0 0-.773-.804ZM14.88 17.392H4.831l-1.16-4.323h12.464L14.88 17.39Zm1.546-5.831H3.188l-.773-2.815h14.783l-.773 2.815Z"
-                      fill="#000" />
-                  </svg>
-                </b>
-              </div>
-            </div>
+      <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
+    </div>
+    <form class="form-content" action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="content-type">
+        <legend class="content-type__title">ТИП</legend>
+        <ul class="content-type__items">
+          <li class="content-type__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="content-type-group" value="interior"
+                checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Аксессуар для интерьера</span>
           </li>
-          <li class="product-cards__item">
-            <picture>
-              <source srcset="img/photo2-315x462.png" type="image/png" media="(min-width:1200px)">
-              <source srcset="img/photo2-334x334.png" type="image/png" media="(min-width:768px)">
-              <img class="product-cards__image" src="img/photo2.png" alt="Корзинка">
-            </picture>
-            <div class="product-cards__wrapper">
-              <div class="product-cards__description">
-                <p class="product-cards__title">Корзинка для белья</p>
-                <p class="product-cards__params">Диаметр 15 см, высота 10 см</p>
-                <b class="product-cards__price">690 руб.
-                  <svg class="product-cards__icon" width="20" height="19" viewBox="0 0 20 19" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".2"
-                      d="M19.227 7.238h-3.382L12.56.402C12.367 0 11.98-.1 11.594.101c-.386.2-.483.603-.29 1.005L14.3 7.238H5.508l2.995-6.132c.194-.402 0-.804-.29-1.005-.386-.202-.772 0-.966.301L3.961 7.238H.773A.777.777 0 0 0 0 8.042c0 .402.29.805.773.805h.193l.87 3.015c-.193.101-.29.302-.29.604 0 .402.29.703.676.703L3.865 19h12.27l1.643-5.83c.386 0 .676-.302.676-.704 0-.201-.096-.503-.29-.604l.87-3.015h.193A.777.777 0 0 0 20 8.042a.777.777 0 0 0-.773-.804ZM14.88 17.392H4.831l-1.16-4.323h12.464L14.88 17.39Zm1.546-5.831H3.188l-.773-2.815h14.783l-.773 2.815Z"
-                      fill="#000" />
-                  </svg>
-                </b>
-              </div>
-            </div>
-          </li>
-          <li class="product-cards__item">
-            <picture>
-              <source srcset="img/photo3-315x462.png" type="image/png" media="(min-width:1200px)">
-              <source srcset="img/photo3-334x334.png" type="image/png" media="(min-width:768px)">
-              <img class="product-cards__image" src="img/photo3.png" alt="Большая корзинка">
-            </picture>
-            <div class="product-cards__wrapper">
-              <div class="product-cards__description">
-                <p class="product-cards__title">Большая корзинка<br> для игрушек</p>
-                <p class="product-cards__params">Диаметр 30 см, высота 30 см</p>
-                <b class="product-cards__price">1 500 руб.
-                  <svg class="product-cards__icon" width="20" height="19" viewBox="0 0 20 19" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".2"
-                      d="M19.227 7.238h-3.382L12.56.402C12.367 0 11.98-.1 11.594.101c-.386.2-.483.603-.29 1.005L14.3 7.238H5.508l2.995-6.132c.194-.402 0-.804-.29-1.005-.386-.202-.772 0-.966.301L3.961 7.238H.773A.777.777 0 0 0 0 8.042c0 .402.29.805.773.805h.193l.87 3.015c-.193.101-.29.302-.29.604 0 .402.29.703.676.703L3.865 19h12.27l1.643-5.83c.386 0 .676-.302.676-.704 0-.201-.096-.503-.29-.604l.87-3.015h.193A.777.777 0 0 0 20 8.042a.777.777 0 0 0-.773-.804ZM14.88 17.392H4.831l-1.16-4.323h12.464L14.88 17.39Zm1.546-5.831H3.188l-.773-2.815h14.783l-.773 2.815Z"
-                      fill="#000" />
-                  </svg>
-                </b>
-              </div>
-            </div>
+          <li class="content-type__item">
+            <input class="visually-hidden control-input" type="radio" name="content-type-group" value="interior"
+              checked>
+            <span class="control-mark"></span>
+            <span class="control-label">Детская игрушка</span>
           </li>
         </ul>
-      </section>
-      <section class="production-process">
-        <div class="production-process__header">
-          <svg class="production-process__icon" width="32" height="22" viewBox="0 0 32 22" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M26 10L32 6V22L26 18V10ZM24 10V18C24 20.2 22.2 22 20 22H4C1.8 22 0 20.2 0 18V10C0 7.8 1.8 6 4 6H14C14 4.9 14.9 4 16 4V2H5C4.4 2 4 1.6 4 1C4 0.4 4.4 0 5 0H17C17.6 0 18 0.4 18 1V4C19.1 4 20 4.9 20 6C22.2 6 24 7.8 24 10ZM12 10H4V18H12V10ZM20 11C20 10.4 19.6 10 19 10H15C14.4 10 14 10.4 14 11C14 11.6 14.4 12 15 12H19C19.6 12 20 11.6 20 11Z"
-              fill="#63D1BB" />
-          </svg>
+      </fieldset>
+      <fieldset class="content-color">
+        <legend class="content-color__title">ЦВЕТ</legend>
+        <ul class="content-color__items">
+          <li class="content-color__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="content-type-group" value="toy" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Аксессуар для интерьера</span>
+          </li>
+          <li class="content-type__item">
+            <input class="visually-hidden control-input" type="radio" name="content-type-group" value="interior"
+              checked>
+            <span class="control-mark"></span>
+            <span class="control-label">Детская игрушка</span>
+          </li>
+          </li>
+        </ul>
 
-          <h2 class="production-process__title">Процесс<br> производства</h2>
-        </div>
-        <video class="production-process__video" src="#" poster="img/video-desktop.png">
-        </video>
-        <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
-          о том, как появляются наши товары.</p>
-        <a class="production-process__button" href="#">Сделать заказ</a>
-      </section>
-    </div>
+      </fieldset>
+    </form>
     <footer class="main-footer">
       <svg class="main-footer__logo" width="102" height="35" viewBox="0 0 102 35" fill="none"
         xmlns="http://www.w3.org/2000/svg">
