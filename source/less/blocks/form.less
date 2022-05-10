@@ -1,6 +1,12 @@
 fieldset {
   border: none;
 }
+legend svg {
+  margin-left: 30px;
+  @media (min-width: @tablet-width){
+    display: none;
+  }
+}
 .form {
   margin: 0 auto;
   width: 320px;
@@ -64,18 +70,39 @@ fieldset {
   align-items: center;
   color: #444444;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    padding: 0 50px 0 50px;
+    margin-top: 65px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 .content-type{
   padding: 0;
   display: block;
   margin: 0;
   margin-bottom: 20px;
+  @media (min-width: @tablet-width){
+    position: relative;
+    margin-top: 30px;
+  }
 }
 .content-type__items{
   position: relative;
   margin-top: 35px;
   padding-left: 60px;
   list-style-type: none;
+  @media (min-width: @tablet-width){
+    margin-top: 49px;
+    margin-left: 207px;
+  }
+}
+.content-type__item{
+  margin: 0;
+  position: relative;
+  @media (min-width: @tablet-width){
+    margin-bottom: 58px;
+  }
 }
 .content-color__items{
   list-style-type: none;
@@ -87,20 +114,20 @@ fieldset {
 }
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
-  top: 9px;
-  left: 6px;
-  width: 12px;
+  top: 17px;
+  left: 10px;
+  width: 20px;
   height: 2px;
-  background-color: #3F5E72;;
+  background-color: #000000;
   content: "";
 }
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top: 10px;
-  left: 3px;
-  width: 6px;
+  top: 20px;
+  left: 6px;
+  width: 8px;
   height: 2px;
-  background-color: #3F5E72;;
+  background-color: #000000;
   content: "";
 }
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -115,11 +142,11 @@ fieldset {
 }
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 10px;
-  height: 10px;
-  background-color:#3F5E72;
+  top: 10px;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  background: #62D1BA;
   border-radius: 50%;
   content: "";
 }
@@ -145,6 +172,11 @@ fieldset {
   text-transform: uppercase;
   color: #63D1BB;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    position: absolute;
+    top: 51px;
+    left: 19px;
+  }
 }
 .control-label{
   font-family: 'Open Sans';
@@ -156,11 +188,20 @@ fieldset {
   align-items: center;
   color: #000000;
   margin-top: 20px;
+  @media (min-width: @tablet-width){
+    font-size: 19px;
+    & br {
+      display: none;
+    }
+  }
 }
 .content-color{
   margin: 0;
   margin-top: 33px;
   padding: 0 30px 0 30px;
+  @media (min-width: @tablet-width){
+    position: relative;
+  }
 }
 .content-color__title{
   padding: 0;
@@ -174,19 +215,31 @@ fieldset {
   text-transform: uppercase;
   color: #63D1BB;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    position: absolute;
+    top: 44px;
+    left: 49px;
+  }
 }
 .content-color__items{
   margin-top: 35px;
   padding: 0 0 0 30px;
   margin-bottom: 25px;
+  @media (min-width: @tablet-width){
+    margin-top: 23px;
+    margin-left: 208px;
+    display: grid;
+    grid-template-columns: 228px 229px;
+    grid-column-gap: 33px;
+  }
 }
 .content-color__item{
   margin-bottom: 43px;
+  @media (min-width: @tablet-width){
+    margin-bottom: 38px;
+  }
 }
-.content-type__item{
-  margin: 0;
-  position: relative;
-}
+
 .content-type__item .control-mark {
   line-height: 20px;
   position: absolute;
@@ -194,17 +247,47 @@ fieldset {
   height: 36px;
   top: -4px;
   right: 250px;
+  @media (min-width: @tablet-width){
+    width: 45px;
+    height: 45px;
+    top: -14px;
+    left: -76px;
+  }
 }
 .content-color__item .control-mark {
   position: absolute;
   width: 34px;
   height: 34px;
   top: -10px;
-  right: 222px;
+  right: 235px;
+  @media (min-width: @tablet-width){
+    width: 48px;
+    height: 48px;
+    top: -17px;
+    right: 227px;
+  }
 }
 .content-fio{
   margin: 0;
   padding: 0 30px 0 30px;
+  @media (min-width: @tablet-width){
+    position: relative;
+    margin-top: 29px;
+  }
+}
+.content-fio__list{
+  padding: 0;
+  list-style-type: none ;
+  @media (min-width: @tablet-width){
+    margin-left: 188px;
+    margin-top: 24px;
+  }
+}
+.content-fio__item{
+  @media (min-width: @tablet-width){
+    display: flex;
+    margin-bottom: 24px;
+  }
 }
 .content-fio__title{
   padding: 0;
@@ -219,6 +302,9 @@ fieldset {
   text-transform: uppercase;
   color: #63D1BB;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    position: absolute;
+  }
 }
 .content-fio__subtitle{
   margin: 0;
@@ -231,6 +317,11 @@ fieldset {
   align-items: center;
   color: #000000;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 .content-fio__input{
   width: 260px;
@@ -248,6 +339,10 @@ fieldset {
   padding: 15px 0 15px 0;
   border-bottom: 2px solid #000000;
   margin-bottom: 24px;
+  @media (min-width: @tablet-width){
+    font-size: 19px;
+    padding: 0;
+  }
 }
 .content-tel {
   margin: 0;
