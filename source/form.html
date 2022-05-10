@@ -79,142 +79,146 @@
       </svg>
       <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form-content" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="content-type">
+          <legend class="content-type__title">ТИП <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg>
+          </legend>
+          <ul class="content-type__items">
+            <li class="content-type__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="content-type-group" value="interior"
+                  checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Аксессуар для<br> интерьера</span>
+            </li>
+            <li class="content-type__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="content-type-group" value="interior"
+                  checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Детская игрушка</span>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="content-color">
+          <legend class="content-color__title">ЦВЕТ <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg>
+          </legend>
+          <ul class="content-color__items">
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Белый</span>
+              </label>
+            </li>
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="grey" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Серый</span>
+              </label>
+            </li>
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="tiffany" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Тиффани</span>
+              </label>
+            </li>
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Черный</span>
+              </label>
+            </li>
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="pink" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Розовый</span>
+              </label>
+            </li>
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="orange" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Оранжевый</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="content-fio">
+          <legend class="content-fio__title">ФИО <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg>
+          </legend>
+          <label class="content-fio__subtitle" for="name-input">Имя:</label>
+          <input class="content-fio__input" id="name-input" type="text" value="" placeholder="Введите ваше имя*">
+          <label class="content-fio__subtitle" for="surname-input">Фамилия:</label>
+          <input class="content-fio__input" id="surname-input" type="text" value="" placeholder="Укажите фамилию*">
+          <label class="content-fio__subtitle" for="patronymic-input">Отчество:</label>
+          <input class="content-fio__input" id="patronymic-input" type="text" value=""
+            placeholder="Отчество, если желаете">
+        </fieldset>
+        <fieldset class="content-tel">
+          <legend class="content-tel__title">ТЕЛ <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg>
+          </legend>
+          <input class="content-tel__input" id="tel-input" type="tel" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*"><svg
+            class="content-tel__icon" width="25" height="24" viewBox="0 0 25 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.2">
+              <path
+                d="M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z"
+                fill="black" />
+              <path
+                d="M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4556 0 12.6008 0V1.48147Z"
+                fill="black" />
+              <path
+                d="M12.6008 9.18506V10.7653C13.4073 10.7653 14.0121 11.3579 14.0121 12.148H15.625C15.625 10.5678 14.3145 9.18506 12.6008 9.18506Z"
+                fill="black" />
+              <path
+                d="M12.6008 6.12356C15.9274 6.12356 18.75 8.79021 18.75 12.1482H20.3629C20.3629 8.00009 16.9355 4.64209 12.7016 4.64209V6.12356H12.6008Z"
+                fill="black" />
+            </g>
+          </svg>
+        </fieldset>
+        <fieldset class="content-mail">
+          <legend class="content-mail__title">E-mail <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg>
+          </legend>
+          <input class="content-mail__input" id="mail-input" type="email" value="" placeholder="Ваш Email*"><svg
+            class="content-mail__icon" width="32" height="21" viewBox="0 0 32 21" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.2"
+              d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z"
+              fill="black" />
+          </svg>
+        </fieldset>
+        <fieldset class="content-dop">
+          <legend class="content-dop__title">Доп <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg></legend>
+          <textarea class="content-dop__input" id="dop-input" rows="6" wrap="soft"
+            placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <p>*Поля обязательны для заполнения</p>
+          <button class="content-dop__button" type="button">ОТПРАВИТЬ ЗАКАЗ</button>
+        </fieldset>
+      </form>
     </div>
-    <form class="form-content" action="https://echo.htmlacademy.ru/" method="get">
-      <fieldset class="content-type">
-        <legend class="content-type__title">ТИП <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="1" fill="#62D1BA" />
-          </svg>
-        </legend>
-        <ul class="content-type__items">
-          <li class="content-type__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="content-type-group" value="interior"
-                checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Аксессуар для интерьера</span>
-          </li>
-          <li class="content-type__item">
-            <input class="visually-hidden control-input" type="radio" name="content-type-group" value="interior"
-              checked>
-            <span class="control-mark"></span>
-            <span class="control-label">Детская игрушка</span>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="content-color">
-        <legend class="content-color__title">ЦВЕТ <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="1" fill="#62D1BA" />
-          </svg>
-        </legend>
-        <ul class="content-color__items">
-          <li class="content-color__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="white" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Белый</span>
-            </label>
-          </li>
-          <li class="content-color__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="grey" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Серый</span>
-            </label>
-          </li>
-          <li class="content-color__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="tiffany" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Тиффани</span>
-            </label>
-          </li>
-          <li class="content-color__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="black" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Черный</span>
-            </label>
-          </li>
-          <li class="content-color__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="pink" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Розовый</span>
-            </label>
-          </li>
-          <li class="content-color__item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="orange" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Оранжевый</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="content-fio">
-        <legend class="content-fio__title">ФИО <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="1" fill="#62D1BA" />
-          </svg>
-        </legend>
-        <label class="content-fio__subtitle" for="name-input">Имя:</label>
-        <input class="content-fio__input" id="name-input" type="text" value="" placeholder="Введите ваше имя*">
-        <label class="content-fio__subtitle" for="surname-input">Фамилия:</label>
-        <input class="content-fio__input" id="surname-input" type="text" value="" placeholder="Укажите фамилию*">
-        <label class="content-fio__subtitle" for="patronymic-input">Отчество:</label>
-        <input class="content-fio__input" id="patronymic-input" type="text" value=""
-          placeholder="Отчество, если желаете">
-      </fieldset>
-      <fieldset class="content-tel">
-        <legend class="content-tel__title">ТЕЛ <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="1" fill="#62D1BA" />
-          </svg>
-        </legend>
-        <input class="content-tel__input" id="tel-input" type="tel" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*"><svg
-          class="content-tel__icon" width="25" height="24" viewBox="0 0 25 24" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <g opacity="0.2">
-            <path
-              d="M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z"
-              fill="black" />
-            <path
-              d="M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4556 0 12.6008 0V1.48147Z"
-              fill="black" />
-            <path
-              d="M12.6008 9.18506V10.7653C13.4073 10.7653 14.0121 11.3579 14.0121 12.148H15.625C15.625 10.5678 14.3145 9.18506 12.6008 9.18506Z"
-              fill="black" />
-            <path
-              d="M12.6008 6.12356C15.9274 6.12356 18.75 8.79021 18.75 12.1482H20.3629C20.3629 8.00009 16.9355 4.64209 12.7016 4.64209V6.12356H12.6008Z"
-              fill="black" />
-          </g>
-        </svg>
-      </fieldset>
-      <fieldset class="content-mail">
-        <legend class="content-mail__title">E-mail <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="1" fill="#62D1BA" />
-          </svg>
-        </legend>
-        <input class="content-mail__input" id="mail-input" type="email" value="" placeholder="Ваш Email*"><svg
-          class="content-mail__icon" width="32" height="21" viewBox="0 0 32 21" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path opacity="0.2"
-            d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z"
-            fill="black" />
-        </svg>
-      </fieldset>
-      <fieldset>
-        <legend class="content-dop__title">Доп</legend>
-        <input class="content-dop__input" id="dop-input" type="text" value=""
-          placeholder="Опишите все ваши пожелания к заказу">
-      </fieldset>
-      <p>*Поля обязательны для заполнения</p>
-      <button class="form__button" type="button">ОТПРАВИТЬ ЗАКАЗ</button>
-    </form>
     <footer class="main-footer">
       <svg class="main-footer__logo" width="102" height="35" viewBox="0 0 102 35" fill="none"
         xmlns="http://www.w3.org/2000/svg">
