@@ -122,6 +122,16 @@
   height: 52px;
   margin-top: 35px;
   margin-left: 30px;
+  margin-bottom: 39px;
+  &:hover {
+    color: #FFFFFF;
+    background: #444444;
+    mix-blend-mode: normal;
+    border: 2px solid #444444;
+  }
+  &:active{
+    color: rgba(255, 255, 255, 0.3);
+  }
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     margin-top: 49px;
@@ -178,14 +188,29 @@
   }
 }
 .contacts__image{
+  position: relative;
   @media (min-width: @desktop-width) {
     grid-area: block-4;
+  }
+}
+.conacts__icon{
+  position: absolute;
+  right: 115px;
+  bottom: 215px;
+  @media (min-width: @tablet-width) {
+    right: 336px;
+    bottom: 223px;
+  }
+  @media (min-width: @desktop-width) {
+    right: 224px;
+    bottom: 218px;
   }
 }
 .contacts__content{
   @media (min-width: @desktop-width) {
     margin-top: 65px;
     display: grid;
+    margin-bottom: 99px;
     grid-template-columns: 527px 527px;
     grid-template-rows: 152px 160px 152px;
     grid-template-areas:"block-1  block-4"

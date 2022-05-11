@@ -1,11 +1,14 @@
 .production-process{
+  position: relative;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 260px;
   margin-top: 30px;
   border: 1px solid #ECECEC;
+  margin-bottom: 54px;
   @media (min-width: @tablet-width){
+    margin-bottom: 73px;
     width: 668px;
   }
   @media (min-width: @desktop-width){
@@ -121,6 +124,15 @@
   color: #444444;
   mix-blend-mode: normal;
   justify-content: center;
+  &:hover {
+    color: #FFFFFF;
+    background: #444444;
+    mix-blend-mode: normal;
+    border: 2px solid #444444;
+  }
+  &:active{
+    color: rgba(255, 255, 255, 0.3);
+  }
   @media (min-width: @tablet-width){
     font-size: 17px;
     margin-top: 40px;
@@ -149,5 +161,27 @@
   @media (min-width: @desktop-width){
     width: 682px;
     grid-area: block-1;
+  }
+}
+.production-process__video-icon{
+  position: absolute;
+  top: 130px;
+  left: 80px;
+  cursor: pointer;
+  &:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+  &:active{
+    transition: 0.5s;
+    transform: scale(0.8);
+  }
+  @media (min-width: @tablet-width){
+    top: 188px;
+    left: 284px;
+  }
+  @media (min-width: @desktop-width){
+    top: 187px;
+    left: 292px;
   }
 }
