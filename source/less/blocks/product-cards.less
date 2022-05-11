@@ -26,7 +26,12 @@
 }
 .product-cards__wrapper{
   border: 1px solid #ECECEC;
-
+  &:hover{
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:hover{
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 .product-cards__item{
   margin-top: 28px;
@@ -59,6 +64,13 @@
   align-items: center;
   color: #000000;
   mix-blend-mode: normal;
+  &:hover{
+    opacity: 0.6;
+  }
+  &:active{
+    opacity: 0.3;
+  }
+  cursor: pointer;
   @media (min-width: @tablet-width){
     margin-top: 27px;
     font-style: normal;
@@ -125,6 +137,15 @@
 }
 .product-cards__icon{
   margin-left: auto;
+  fill: #000000;
+  opacity: 0.2;
+  &:hover{
+    fill: #63D1BB;
+    opacity: 1;
+  }
+  &:active{
+    opacity: 0.3;
+  }
   @media (min-width: @tablet-width){
     display: block;
   }

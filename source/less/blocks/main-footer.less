@@ -4,14 +4,21 @@
   @media (min-width: @tablet-width) {
     display: flex;
     height: 143px;
-    margin-top: 72px;
+    margin-top: 50px;
   }
   @media (min-width: @desktop-width) {
-    margin-top: 97px;
+    margin-top: 50px;
   }
 }
 .main-footer__logo{
   display: none;
+  fill: #000000;
+  &:hover{
+    fill: #46C1AE;
+  }
+  &:active{
+    opacity: 0.3;
+  }
   @media (min-width: @tablet-width) {
     display: block;
     margin: 51px 78px 58px 50px ;

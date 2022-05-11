@@ -76,6 +76,11 @@ legend svg {
     font-size: 17px;
     line-height: 30px;
   }
+  @media (min-width: @tablet-width) {
+    margin-top: 118px;
+    margin-left: 175px;
+    margin-right: 153px;
+  }
 }
 .content-type{
   padding: 0;
@@ -85,6 +90,7 @@ legend svg {
   @media (min-width: @tablet-width){
     position: relative;
     margin-top: 30px;
+    margin-bottom: 0;
   }
 }
 .content-type__items{
@@ -95,6 +101,10 @@ legend svg {
   @media (min-width: @tablet-width){
     margin-top: 49px;
     margin-left: 207px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 49px;
+    margin-left: 214px;
   }
 }
 .content-type__item{
@@ -120,6 +130,12 @@ legend svg {
   height: 2px;
   background-color: #000000;
   content: "";
+  @media (min-width: @tablet-width) {
+    top: 24px;
+    left: 14px;
+    width: 28px;
+    height: 2px;
+  }
 }
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
@@ -129,6 +145,12 @@ legend svg {
   height: 2px;
   background-color: #000000;
   content: "";
+  @media (min-width: @tablet-width) {
+    top: 29px;
+    left: 7px;
+    width: 14px;
+    height: 2px;
+  }
 }
 .control-input[type="checkbox"]:checked + .control-mark::before {
   transform: rotate(45deg);
@@ -149,6 +171,12 @@ legend svg {
   background: #62D1BA;
   border-radius: 50%;
   content: "";
+  @media (min-width: @tablet-width) {
+    top: 12px;
+    left: 13px;
+    width: 19px;
+    height: 19px;
+  }
 }
 .control-mark {
   position: absolute;
@@ -158,6 +186,12 @@ legend svg {
   height: 38px;
   background: #ffffff;
   border: 2px solid #444444;
+  &:hover {
+    border: 2px solid #62D1BA;
+  }
+  &:active {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
 }
 .content-type__title{
   margin: 0;
@@ -176,6 +210,10 @@ legend svg {
     position: absolute;
     top: 51px;
     left: 19px;
+  }
+  @media (min-width: @desktop-width) {
+    top: 51px;
+    left: 81px;
   }
 }
 .control-label{
@@ -200,7 +238,11 @@ legend svg {
   margin-top: 33px;
   padding: 0 30px 0 30px;
   @media (min-width: @tablet-width){
+    padding: 0px;
+    background: #F1F1F1;
     position: relative;
+    margin-top: 10px;
+    padding-top: 26px;
   }
 }
 .content-color__title{
@@ -220,17 +262,27 @@ legend svg {
     top: 44px;
     left: 49px;
   }
+  @media (min-width: @desktop-width) {
+    top: 65px;
+    left: 111px;
+  }
 }
 .content-color__items{
   margin-top: 35px;
   padding: 0 0 0 30px;
   margin-bottom: 25px;
   @media (min-width: @tablet-width){
-    margin-top: 23px;
-    margin-left: 208px;
+    margin-top: 20px;
+    margin-left: 239px;
     display: grid;
     grid-template-columns: 228px 229px;
     grid-column-gap: 33px;
+  }
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 227px 228px 231px;
+    margin-top: 20px;
+    margin-left: 247px;
+    grid-column-gap: 34px;
   }
 }
 .content-color__item{
@@ -282,11 +334,15 @@ legend svg {
     margin-left: 188px;
     margin-top: 24px;
   }
+  @media (min-width: @desktop-width){
+    margin-left: 197px;
+    margin-top: 22px;
+  }
 }
 .content-fio__item{
   @media (min-width: @tablet-width){
+    margin-bottom: 25px;
     display: flex;
-    margin-bottom: 24px;
   }
 }
 .content-fio__title{
@@ -304,6 +360,12 @@ legend svg {
   mix-blend-mode: normal;
   @media (min-width: @tablet-width){
     position: absolute;
+    top: 43px;
+    left: 50px;
+  }
+  @media (min-width: @desktop-width){
+    top: 42px;
+    left: 110px;
   }
 }
 .content-fio__subtitle{
@@ -318,9 +380,10 @@ legend svg {
   color: #000000;
   mix-blend-mode: normal;
   @media (min-width: @tablet-width){
+    margin-right: 25px;
     font-weight: 700;
     font-size: 19px;
-    line-height: 18px;
+    line-height: 50px;
   }
 }
 .content-fio__input{
@@ -339,15 +402,41 @@ legend svg {
   padding: 15px 0 15px 0;
   border-bottom: 2px solid #000000;
   margin-bottom: 24px;
+  &:hover {
+    border-bottom: 2px solid #62d1ba
+  }
+  &:active {
+    border-bottom: 2px solid #62d1ba
+  }
   @media (min-width: @tablet-width){
     font-size: 19px;
-    padding: 0;
+    line-height: 50px;
+    margin: 0;
+    padding: 0 17px;
+    width: 341px;
+  }
+  @media (min-width: @desktop-width){
+    width: 540px;
+  }
+}
+.content-fio__item:nth-of-type(1) .content-fio__input{
+  @media (min-width: @tablet-width){
+    width: 392px;
+  }
+  @media (min-width: @desktop-width){
+    width: 592px;
   }
 }
 .content-tel {
   margin: 0;
   margin-top: 11px;
   padding: 0 30px 0 30px;
+  @media (min-width: @tablet-width){
+    padding: 0;
+    margin-top: 20px;
+    background: #F1F1F1;
+    position: relative;
+  }
 }
 .content-tel__title{
   padding: 0;
@@ -361,6 +450,15 @@ legend svg {
   text-transform: uppercase;
   color: #63D1BB;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    position: absolute;
+    top: 70px;
+    left: 50px;
+  }
+  @media (min-width: @desktop-width){
+    top: 70px;
+    left: 111px;
+  }
 }
 .content-tel__input{
   width: 260px;
@@ -378,6 +476,26 @@ legend svg {
   padding: 18px 0 18px 0;
   border-bottom: 2px solid #000000;
   margin-bottom: 20px;
+  background: none;
+  &:hover {
+    border-bottom: 2px solid #62d1ba
+  }
+  &:active {
+    border-bottom: 2px solid #62d1ba
+  }
+  @media (min-width: @tablet-width){
+    width: 466px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 47px;
+    font-size: 19px;
+    padding: 16px 17px 16px 17px;
+    margin-bottom: 0;
+  }
+  @media (min-width: @desktop-width){
+    margin-left: 225px;
+    width: 667px;
+  }
 }
 .content-tel{
   position: relative;
@@ -386,11 +504,29 @@ legend svg {
   position: absolute;
   right: 37px;
   bottom: 37px;
+  fill: #000000;
+  opacity: 0.2;
+  @media (min-width: @desktop-width){
+    right: 233px;
+    bottom: 18px;
+  }
+  &:hover {
+    fill: #62d1ba;
+    opacity: 1;
+  }
 }
 .content-mail{
   margin: 0;
   margin-top: 15px;
   padding: 0 30px 0 30px;
+  @media (min-width: @tablet-width){
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    background: #F1F1F1;
+    position: relative;
+    padding-bottom: 29px;
+  }
 }
 .content-mail__title{
   padding: 0;
@@ -407,6 +543,15 @@ legend svg {
   & svg {
     width: 182px;
     margin-left: 20px;
+  }
+  @media (min-width: @tablet-width){
+    position: absolute;
+    top: 41px;
+    left: 49px;
+  }
+  @media (min-width: @desktop-width){
+    top: 41px;
+    left: 112px;
   }
 }
 .content-mail__input{
@@ -425,11 +570,40 @@ legend svg {
   padding: 18px 0 18px 0;
   border-bottom: 2px solid #000000;
   margin-bottom: 20px;
+  background: none;
+  &:hover {
+    border-bottom: 2px solid #62d1ba
+  }
+  &:active {
+    border-bottom: 2px solid #62d1ba
+  }
+  @media (min-width: @tablet-width){
+    width: 466px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 7px;
+    font-size: 19px;
+    padding: 12px 17px 14px 17px;
+  }
+  @media (min-width: @desktop-width){
+    margin-left: 225px;
+    width: 667px;
+  }
 }
 .content-mail__icon{
   position: absolute;
   right: 33px;
   bottom: 35px;
+  opacity: 0.2;
+  fill: #000000;
+  &:hover {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+  @media (min-width: @desktop-width){
+    right: 229px;
+    bottom: 65px;
+  }
 }
 .content-mail{
   position: relative;
@@ -438,6 +612,9 @@ legend svg {
   margin: 0;
   margin-top: 16px;
   padding: 0 30px 0 30px;
+  @media (min-width: @tablet-width){
+    position: relative;
+  }
 }
 .content-dop__title{
   padding: 0;
@@ -452,6 +629,14 @@ legend svg {
   text-transform: uppercase;
   color: #63D1BB;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    position: absolute;
+    top: 54px;
+    left: 49px;
+  }
+  @media (min-width: @desktop-width){
+    left: 111px;
+  }
 }
 .content-dop__input{
   margin: 0;
@@ -468,8 +653,29 @@ legend svg {
   mix-blend-mode: normal;
   opacity: 0.3;
   border: 2px solid #444444;
+  &:hover{
+    border: 2px solid #62D1BA;
+  }
+  &:active{
+    font-size: 19px;
+    line-height: 18px;
+    border: 2px solid #62D1BA;
+  }
+  @media (min-width: @tablet-width){
+    font-size: 19px;
+    width: 467px;
+    margin-top: 34px;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+  @media (min-width: @desktop-width){
+    margin-left: 196px;
+    width: 668px;
+    font-weight: 400;
+    font-size: 19px;
+  }
 }
-.content-dop p {
+.form-other__text {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -479,8 +685,27 @@ legend svg {
   align-items: center;
   color: #444444;
   mix-blend-mode: normal;
+  @media (min-width: @tablet-width){
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+    order: 2;
+    margin-left: 136px;
+    margin-top: 33px;
+  }
+  @media (min-width: @desktop-width){
+    margin-left: 168px;
+  }
 }
-.content-dop__button{
+.form-other {
+  padding: 0 30px 0 30px;
+  @media (min-width: @tablet-width){
+    padding: 0;
+    display: flex;
+    margin-top: 20px;
+  }
+}
+.form-other__button{
   padding: 0;
   margin-top: 33px;
   border: none;
@@ -500,4 +725,13 @@ legend svg {
   mix-blend-mode: normal;
   border: 2px solid #444444;
   justify-content: center;
+  @media (min-width: @tablet-width){
+    order: 0;
+    margin-left: 50px;
+    width: 230px;
+  }
+  @media (min-width: @desktop-width){
+    margin-left: 226px;
+    margin-top: 29px;
+  }
 }
