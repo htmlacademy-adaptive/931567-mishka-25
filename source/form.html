@@ -78,107 +78,160 @@
       </div>
     </nav>
   </header>
-  <main class="catalog">
-    <div class="catalog__wrapper">
-      <h1 class="catalog__title">Каталог товаров</h1>
-      <svg class="catalog__devider" viewBox="0 0 1150 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <main class="form">
+    <div class="form__wrapper">
+      <h1 class="form__title">Вязание на заказ</h1>
+      <svg class="form__devider" viewBox="0 0 1150 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M1168.8 0C1153.15 0 1153.15 14 1137.61 14C1122.07 14 1121.96 0 1106.41 0C1090.87 0 1090.76 14 1075.22 14C1059.57 14 1059.57 0 1043.91 0C1028.26 0 1028.26 14 1012.72 14C997.065 14 997.065 0 981.522 0C965.87 0 965.87 14 950.326 14C934.783 14 934.348 0 918.804 0C903.152 0 903.152 14 887.609 14C872.065 14 871.848 0 856.304 0C840.652 0 840.652 14 825.109 14C809.456 14 809.456 0 793.804 0C778.152 0 778.152 14 762.609 14C746.956 14 746.957 0 731.413 0C715.87 0 715.652 14 700 14C684.348 14 684.348 0 668.804 0C653.152 0 653.152 14 637.609 14C621.956 14 621.956 0 606.304 0C590.652 0 590.652 14 575.109 14C559.456 14 559.457 0 543.913 0C528.261 0 528.261 14 512.717 14C497.065 14 497.065 0 481.522 0C465.87 0 465.87 14 450.217 14C434.565 14 434.565 0 418.913 0C403.261 0 403.261 14 387.609 14C371.957 14 371.957 0 356.304 0C340.652 0 340.652 14 325 14C309.348 14 309.348 0 293.696 0C278.043 0 278.043 14 262.391 14C246.739 14 246.739 0 231.087 0C215.435 0 215.435 14 199.891 14C184.239 14 184.239 0 168.587 0C152.935 0 152.935 14 137.283 14C121.63 14 121.63 0 105.978 0C90.3261 0 90.3261 14 74.6739 14C59.0217 14 59.0217 0 43.3696 0C28.1522 0 28.1522 14 12.5 14C-3.15217 14 -3.15218 0 -18.6957 0C-34.2391 0 -34.3478 14 -50 14V34H1200V14C1184.35 14 1184.35 0 1168.8 0Z"
           fill="white" />
       </svg>
-      <section class="product-cards">
-        <h2 class="visually-hidden">Карточки товаров</h2>
-        <ul class="product-cards__list">
-          <li class="product-cards__item">
-            <picture>
-              <source srcset="img/photo1-316x462.png" type="image/png" media="(min-width:1200px)">
-              <source srcset="img/photo1-334x334.png" type="image/png" media="(min-width:768px)">
-              <img class="product-cards__image" src="img/photo1.png" alt="Изображение зайца">
-            </picture>
-            <div class="product-cards__wrapper">
-              <div class="product-cards__description">
-                <p class="product-cards__title">Зайчик-попрыгайчик</p>
-                <p class="product-cards__params">Рост 30 см, вес 200 г</p>
-                <b class="product-cards__price">1 200 руб.
-                  <svg class="product-cards__icon" width="20" height="19" viewBox="0 0 20 19" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19.227 7.238h-3.382L12.56.402C12.367 0 11.98-.1 11.594.101c-.386.2-.483.603-.29 1.005L14.3 7.238H5.508l2.995-6.132c.194-.402 0-.804-.29-1.005-.386-.202-.772 0-.966.301L3.961 7.238H.773A.777.777 0 0 0 0 8.042c0 .402.29.805.773.805h.193l.87 3.015c-.193.101-.29.302-.29.604 0 .402.29.703.676.703L3.865 19h12.27l1.643-5.83c.386 0 .676-.302.676-.704 0-.201-.096-.503-.29-.604l.87-3.015h.193A.777.777 0 0 0 20 8.042a.777.777 0 0 0-.773-.804ZM14.88 17.392H4.831l-1.16-4.323h12.464L14.88 17.39Zm1.546-5.831H3.188l-.773-2.815h14.783l-.773 2.815Z" />
-                  </svg>
-                </b>
-              </div>
-            </div>
-          </li>
-          <li class="product-cards__item">
-            <picture>
-              <source srcset="img/photo2-315x462.png" type="image/png" media="(min-width:1200px)">
-              <source srcset="img/photo2-334x334.png" type="image/png" media="(min-width:768px)">
-              <img class="product-cards__image" src="img/photo2.png" alt="Корзинка">
-            </picture>
-            <div class="product-cards__wrapper">
-              <div class="product-cards__description">
-                <p class="product-cards__title">Корзинка для белья</p>
-                <p class="product-cards__params">Диаметр 15 см, высота 10 см</p>
-                <b class="product-cards__price">690 руб.
-                  <svg class="product-cards__icon" width="20" height="19" viewBox="0 0 20 19" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19.227 7.238h-3.382L12.56.402C12.367 0 11.98-.1 11.594.101c-.386.2-.483.603-.29 1.005L14.3 7.238H5.508l2.995-6.132c.194-.402 0-.804-.29-1.005-.386-.202-.772 0-.966.301L3.961 7.238H.773A.777.777 0 0 0 0 8.042c0 .402.29.805.773.805h.193l.87 3.015c-.193.101-.29.302-.29.604 0 .402.29.703.676.703L3.865 19h12.27l1.643-5.83c.386 0 .676-.302.676-.704 0-.201-.096-.503-.29-.604l.87-3.015h.193A.777.777 0 0 0 20 8.042a.777.777 0 0 0-.773-.804ZM14.88 17.392H4.831l-1.16-4.323h12.464L14.88 17.39Zm1.546-5.831H3.188l-.773-2.815h14.783l-.773 2.815Z" />
-                  </svg>
-                </b>
-              </div>
-            </div>
-          </li>
-          <li class="product-cards__item">
-            <picture>
-              <source srcset="img/photo3-315x462.png" type="image/png" media="(min-width:1200px)">
-              <source srcset="img/photo3-334x334.png" type="image/png" media="(min-width:768px)">
-              <img class="product-cards__image" src="img/photo3.png" alt="Большая корзинка">
-            </picture>
-            <div class="product-cards__wrapper">
-              <div class="product-cards__description">
-                <p class="product-cards__title">Большая корзинка<br> для игрушек</p>
-                <p class="product-cards__params">Диаметр 30 см, высота 30 см</p>
-                <b class="product-cards__price">1 500 руб.
-                  <svg class="product-cards__icon" width="20" height="19" viewBox="0 0 20 19" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19.227 7.238h-3.382L12.56.402C12.367 0 11.98-.1 11.594.101c-.386.2-.483.603-.29 1.005L14.3 7.238H5.508l2.995-6.132c.194-.402 0-.804-.29-1.005-.386-.202-.772 0-.966.301L3.961 7.238H.773A.777.777 0 0 0 0 8.042c0 .402.29.805.773.805h.193l.87 3.015c-.193.101-.29.302-.29.604 0 .402.29.703.676.703L3.865 19h12.27l1.643-5.83c.386 0 .676-.302.676-.704 0-.201-.096-.503-.29-.604l.87-3.015h.193A.777.777 0 0 0 20 8.042a.777.777 0 0 0-.773-.804ZM14.88 17.392H4.831l-1.16-4.323h12.464L14.88 17.39Zm1.546-5.831H3.188l-.773-2.815h14.783l-.773 2.815Z" />
-                  </svg>
-                </b>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="production-process">
-        <div class="production-process__header">
-          <svg class="production-process__icon" width="32" height="22" viewBox="0 0 32 22" fill="none"
+      <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form-content" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="content-type">
+          <legend class="content-type__title">ТИП <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg>
+          </legend>
+          <ul class="content-type__items">
+            <li class="content-type__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="content-type-group" value="interior"
+                  checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Аксессуар для<br> интерьера</span>
+            </li>
+            <li class="content-type__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="content-type-group" value="interior"
+                  checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Детская игрушка</span>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="content-color">
+          <legend class="content-color__title">ЦВЕТ <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg>
+          </legend>
+          <ul class="content-color__items">
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Белый</span>
+              </label>
+            </li>
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="grey" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Серый</span>
+              </label>
+            </li>
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="tiffany" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Тиффани</span>
+              </label>
+            </li>
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Черный</span>
+              </label>
+            </li>
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="pink" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Розовый</span>
+              </label>
+            </li>
+            <li class="content-color__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="orange" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Оранжевый</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="content-fio">
+          <legend class="content-fio__title">ФИО <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg>
+          </legend>
+          <ul class="content-fio__list">
+            <li class="content-fio__item">
+              <label class="content-fio__subtitle" for="name-input">Имя:</label>
+              <input class="content-fio__input" id="name-input" type="text" value="" placeholder="Введите ваше имя*">
+            </li>
+            <li class="content-fio__item">
+              <label class="content-fio__subtitle" for="surname-input">Фамилия:</label>
+              <input class="content-fio__input" id="surname-input" type="text" value="" placeholder="Укажите фамилию*">
+            </li>
+            <li class="content-fio__item">
+              <label class="content-fio__subtitle" for="patronymic-input">Отчество:</label>
+              <input class="content-fio__input" id="patronymic-input" type="text" value=""
+                placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="content-tel">
+          <legend class="content-tel__title">ТЕЛ <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg>
+          </legend>
+          <input class="content-tel__input" id="tel-input" type="tel" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*"><svg
+            class="content-tel__icon" width="25" height="24" viewBox="0 0 25 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path
+                d="M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z" />
+              <path
+                d="M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4556 0 12.6008 0V1.48147Z" />
+              <path
+                d="M12.6008 9.18506V10.7653C13.4073 10.7653 14.0121 11.3579 14.0121 12.148H15.625C15.625 10.5678 14.3145 9.18506 12.6008 9.18506Z" />
+              <path
+                d="M12.6008 6.12356C15.9274 6.12356 18.75 8.79021 18.75 12.1482H20.3629C20.3629 8.00009 16.9355 4.64209 12.7016 4.64209V6.12356H12.6008Z" />
+            </g>
+          </svg>
+        </fieldset>
+        <fieldset class="content-mail">
+          <legend class="content-mail__title">E-mail <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg>
+          </legend>
+          <input class="content-mail__input" id="mail-input" type="email" value="" placeholder="Ваш Email*"><svg
+            class="content-mail__icon" width="32" height="21" viewBox="0 0 32 21" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M26 10L32 6V22L26 18V10ZM24 10V18C24 20.2 22.2 22 20 22H4C1.8 22 0 20.2 0 18V10C0 7.8 1.8 6 4 6H14C14 4.9 14.9 4 16 4V2H5C4.4 2 4 1.6 4 1C4 0.4 4.4 0 5 0H17C17.6 0 18 0.4 18 1V4C19.1 4 20 4.9 20 6C22.2 6 24 7.8 24 10ZM12 10H4V18H12V10ZM20 11C20 10.4 19.6 10 19 10H15C14.4 10 14 10.4 14 11C14 11.6 14.4 12 15 12H19C19.6 12 20 11.6 20 11Z"
-              fill="#63D1BB" />
+              d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z" />
           </svg>
-
-          <h2 class="production-process__title">Процесс<br> производства</h2>
+        </fieldset>
+        <fieldset class="content-dop">
+          <legend class="content-dop__title">Доп <svg width="200" height="1" viewBox="0 0 200 1" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="1" fill="#62D1BA" />
+            </svg></legend>
+          <textarea class="content-dop__input" id="dop-input" rows="6" wrap="soft"
+            placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <div class="form-other">
+          <p class="form-other__text">*Поля обязательны для заполнения</p>
+          <button class="form-other__button" type="button">ОТПРАВИТЬ ЗАКАЗ</button>
         </div>
-        <video class="production-process__video" src="#" poster="img/video-desktop.png">
-        </video>
-        <svg class="production-process__video-icon" width="102" height="78" viewBox="0 0 102 78" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M98.2487 18.3359C98.2487 18.3359 97.3362 11.2447 94.3958 8.10438C90.7457 4.0523 86.5887 3.95098 84.7636 3.74837C71.2785 2.73535 51.0002 2.73535 51.0002 2.73535H50.8988C50.8988 2.73535 30.6205 2.73535 17.1354 3.74837C15.2089 3.95098 11.1533 4.0523 7.5032 8.10438C4.66423 11.2447 3.65031 18.3359 3.65031 18.3359C3.65031 18.3359 2.73779 26.6427 2.73779 34.9494V42.7497C2.73779 51.0564 3.65031 59.3632 3.65031 59.3632C3.65031 59.3632 4.56284 66.4544 7.5032 69.5947C11.1533 73.6468 16.0201 73.5455 18.1493 73.9507C25.8551 74.7611 51.0002 74.9638 51.0002 74.9638C51.0002 74.9638 71.2785 74.9638 84.7636 73.9507C86.6901 73.7481 90.7457 73.6468 94.3958 69.5947C97.2348 66.4544 98.2487 59.3632 98.2487 59.3632C98.2487 59.3632 99.1613 51.0564 99.1613 42.7497V34.9494C99.1613 26.6427 98.2487 18.3359 98.2487 18.3359Z"
-            fill="#63D1BB" />
-          <path
-            d="M50.8986 77.8C49.8847 77.8 25.5507 77.4961 17.8449 76.787H17.7435H17.6421C17.338 76.6857 16.9324 76.6857 16.5269 76.5844C13.9921 76.2805 9.22664 75.6727 5.57654 71.5193C2.12922 67.8724 1.11531 60.5786 1.01392 59.7682C1.01392 59.4643 0 51.1575 0 42.8508V35.0505C0 26.6425 0.912534 18.437 0.912534 18.1331V18.0318C1.01393 17.2213 2.12923 10.0289 5.47516 6.28071C9.53082 1.82342 14.0934 1.31693 16.3241 1.11433C16.5268 1.11433 16.7296 1.11432 16.831 1.01302H16.9324C30.4175 0 50.6958 0 50.8986 0H51C51.2028 0 71.4811 0 84.9662 1.01302H85.0676C85.2704 1.01302 85.3718 1.01303 85.5745 1.11433C87.8052 1.31693 92.3678 1.82342 96.4235 6.28071C99.8708 9.92759 100.885 17.2213 100.986 18.0318C100.986 18.3357 102 26.6425 102 35.0505V42.8508C102 51.2588 101.087 59.4643 100.986 59.7682V59.8695C100.885 60.68 99.7694 67.9737 96.4235 71.6206C92.3678 76.0779 87.8052 76.5844 85.5745 76.787C85.3718 76.787 85.169 76.787 85.0676 76.8883H84.9662C71.4811 77.8 51.1014 77.8 50.8986 77.8ZM18.5547 71.3167C26.1591 72.0258 50.1889 72.3297 51 72.3297C51.7098 72.3297 71.3797 72.3297 84.4593 71.3167C84.662 71.3167 84.8648 71.3167 85.0676 71.2154C86.8926 71.0127 89.7316 70.7089 92.3678 67.8724C94.1928 65.8464 95.3082 60.8825 95.5109 59.1604C95.6123 58.6539 96.4235 50.651 96.4235 42.8508V35.0505C96.4235 27.149 95.5109 19.2474 95.4095 18.7409C95.1054 16.3096 93.9901 11.8523 92.2664 10.1302C89.6302 7.19245 86.7913 6.98983 84.9662 6.78722C84.7634 6.78722 84.5606 6.78725 84.3579 6.68594C71.0756 5.67292 51.1014 5.67292 50.8986 5.67292H50.7972C50.5944 5.67292 30.5189 5.67292 17.338 6.68594C17.1352 6.68594 16.9324 6.68592 16.7296 6.78722C14.9046 6.98983 12.0656 7.29375 9.42944 10.1302C7.60439 12.1562 6.48908 17.1201 6.28629 18.8422C6.1849 19.45 5.37376 27.3515 5.37376 35.1518V42.9521C5.37376 50.7523 6.28629 58.7552 6.28629 59.2617C6.59047 61.693 7.70578 66.1503 9.42944 67.8724C11.7614 70.5063 14.8032 70.9114 17.0338 71.2154C17.6422 71.1141 18.0477 71.2154 18.5547 71.3167Z"
-            fill="white" />
-          <path d="M38.8337 20.767V56.9318L69.0484 38.9L38.8337 20.767Z" fill="white" />
-        </svg>
-
-        <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
-          о том, как появляются наши товары.</p>
-        <a class="production-process__button" href="#">Сделать заказ</a>
-      </section>
+      </form>
     </div>
     <footer class="main-footer">
       <svg class="main-footer__logo" width="102" height="35" viewBox="0 0 102 35" fill="none"

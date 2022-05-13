@@ -1,0 +1,125 @@
+.product-category__title {
+  margin: 0;
+  display: block;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  padding: 68px 0 120px 0;
+  @media (min-width: @tablet-width){
+    margin: 0 auto;
+    width: 668px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 154px;
+    padding-bottom: 372px;
+  }
+  @media (min-width: @desktop-width){
+    padding-bottom: 356px;
+    padding-top: 156px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+.product-category__title br {
+  @media (min-width: @tablet-width){
+    display:none;
+  }
+}
+.product-category__wrapper{
+  @media (min-width: @desktop-width){
+    width: 1050px;
+    padding: 0 50px 0 50px;
+  }
+}
+.product-category__list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 320px;
+  @media (min-width: @tablet-width){
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+  @media (min-width: @desktop-width){
+    width: 1050px;
+  }
+}
+.product-category__item{
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 35px 25px 0px;
+  @media (min-width: @tablet-width){
+    width: 334px;
+    padding: 25px 36px 34px 36px;
+  }
+  @media (min-width: @desktop-width){
+    width: 525px;
+    padding: 25px 36px 44px 36px;
+  }
+}
+.product-category__link{
+  width: 130px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  margin-left: 30px;
+  @media (min-width: @tablet-width){
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @media (min-width: @desktop-width){
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.product-category__icon{
+  display: block;
+}
+.light--green{
+  background: #63D1BB;
+}
+.dark--green{
+  background: #56C3B2;
+}
+.product-category__devider{
+  display: none;
+  @media (min-width: @tablet-width){
+    display: block;
+    position: absolute;
+    bottom: -4px;
+  }
+  @media (min-width: @desktop-width){
+    bottom: -5px;
+  }
+}
+.product-category{
+  position: relative;
+  background-image: url("/img/hero-mobile.jpg");
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/hero-desktop2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/hero-desktop3.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+}
+.product-category__interior-icon{
+}
