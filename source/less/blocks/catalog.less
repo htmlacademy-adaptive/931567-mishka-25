@@ -1,17 +1,20 @@
-.catalog{
+.catalog {
   margin: 0 auto;
   width: 320px;
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     position: relative;
     width: 768px;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     width: 1150px;
   }
 }
-.catalog__title{
+
+.catalog__title {
   margin: 0;
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
@@ -21,11 +24,12 @@
   text-align: center;
   color: #000000;
   mix-blend-mode: normal;
-  background: #F1F1F1;
+  background: #f1f1f1;
   justify-content: center;
   padding: 68px 0 73px 0;
-  @media (min-width: @tablet-width){
-    font-family: 'Open Sans';
+
+  @media (min-width: @tablet-width) {
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 43px;
@@ -34,15 +38,18 @@
     text-align: center;
     padding: 99px 0 77px 0;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
     padding: 99px 0 97px 0;
   }
 }
-.catalog__devider{
+
+.catalog__devider {
   display: none;
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     display: block;
     position: absolute;
     margin-top: -16px;

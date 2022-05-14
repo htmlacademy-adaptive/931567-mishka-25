@@ -19,7 +19,7 @@
     "gulp-terser": "^2.1.0",
     "postcss": "8.3.11",
     "postcss-csso": "^6.0.0",
-    "stylelint": "13.13.1",
+    "stylelint": "^13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
   },
   "scripts": {
@@ -47,5 +47,11 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "npm": "^8.10.0",
+    "prettier": "^2.6.2",
+    "run": "^1.4.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0"
+  }
 }
