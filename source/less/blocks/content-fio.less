@@ -1,0 +1,125 @@
+.content-fio {
+  margin: 0;
+  padding: 0 30px 0 30px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin-top: 29px;
+  }
+}
+
+.content-fio__list {
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 188px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 197px;
+    margin-top: 22px;
+  }
+}
+
+.content-fio__item {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+    display: flex;
+  }
+}
+
+.content-fio__title {
+  padding: 0;
+  margin-bottom: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #63d1bb;
+  mix-blend-mode: normal;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 43px;
+    left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 42px;
+    left: 110px;
+  }
+}
+
+.content-fio__subtitle {
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  mix-blend-mode: normal;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 25px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 50px;
+  }
+}
+
+.content-fio__input {
+  width: 260px;
+  border: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  padding: 15px 0 15px 0;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0 17px;
+    width: 341px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 540px;
+  }
+}
+
+.content-fio__item:nth-of-type(1) .content-fio__input {
+  @media (min-width: @tablet-width) {
+    width: 392px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 592px;
+  }
+}
