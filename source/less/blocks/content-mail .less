@@ -1,0 +1,104 @@
+.content-mail {
+  position: relative;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0 30px 0 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    background: #f1f1f1;
+    position: relative;
+    padding-bottom: 29px;
+  }
+}
+
+.content-mail__title {
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #63d1bb;
+  mix-blend-mode: normal;
+
+  & svg {
+    width: 182px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 41px;
+    left: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 41px;
+    left: 112px;
+  }
+}
+
+.content-mail__input {
+  width: 260px;
+  border: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  padding: 18px 0 18px 0;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 20px;
+  background: none;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 466px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 7px;
+    font-size: 19px;
+    padding: 12px 17px 14px 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 225px;
+    width: 667px;
+  }
+}
+
+.content-mail__icon {
+  position: absolute;
+  right: 33px;
+  bottom: 35px;
+  opacity: 0.2;
+  fill: #000000;
+
+  &:hover {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 229px;
+    bottom: 65px;
+  }
+}
