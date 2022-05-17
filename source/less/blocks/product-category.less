@@ -128,20 +128,21 @@
 
 .product-category {
   position: relative;
-  background-image: url("/img/hero-mobile.jpg");
+  background-image: url("/img/hero-mobile.png");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/hero-desktop2x.jpg");
+    background-image: url("/img/hero-desktop2x.png");
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("/img/hero-desktop2.jpg");
+    background-image: url("/img/hero-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("/img/hero-desktop3.jpg");
+    background-image: url("/img/hero-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
